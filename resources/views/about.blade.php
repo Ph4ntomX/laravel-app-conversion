@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@include('layout.navbar', ['selected' => 'contacts'])
+@include('layout.navbar', ['selected' => 'about'])
 @section('section')
     @include('layout.intro', [
       'title' => 'About Us',
