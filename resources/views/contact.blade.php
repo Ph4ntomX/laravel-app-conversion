@@ -2,12 +2,10 @@
 
 @include('layout.navbar', ['selected' => 'contact'])
 @section('section')
-<section class="page-header text-white text-center py-5">
-      <div class="container">
-        <h1 class="display-4 fw-bold">Contact Us</h1>
-        <p class="lead">Let's Start Your Digital Marketing Journey</p>
-      </div>
-    </section>
+    @include('layout.intro', [
+      'title' => 'Contact Us',
+      'description' => "Let's Start Your Digital Marketing Journey",
+    ])
 
     <!-- Contact Section -->
     <section class="py-5">

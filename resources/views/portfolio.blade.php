@@ -2,12 +2,10 @@
 
 @include('layout.navbar', ['selected' => 'portfolio'])
 @section('section')
-<section class="page-header text-white text-center py-5">
-      <div class="container">
-        <h1 class="display-4 fw-bold">Our Portfolio</h1>
-        <p class="lead">Success Stories from Our Clients</p>
-      </div>
-    </section>
+    @include('layout.intro', [
+      'title' => 'Our Portfolio',
+      'description' => 'Success Stories from Our Clients',
+    ])
 
     <!-- Filter Section -->
     <section class="py-3">
